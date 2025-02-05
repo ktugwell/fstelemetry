@@ -21,7 +21,7 @@ def main():
                         help='Relative path to the config file')
     parser.add_argument('--log', default=logname,
                         help='Relative path for the output log file')
-    parser.add_argument('--interval', default=1.0,
+    parser.add_argument('--interval', type=float, default=1.0,
                         help='Polling interval in seconds')
 
     args = parser.parse_args()
